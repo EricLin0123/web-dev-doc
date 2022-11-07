@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<section id="section1">
+    <div class="anchrname"></div>
+
+    <div class="anchpic">
+        <img src="./IMG_0959.jpg" id="anchpic1">
+    </div>
+
+    <div id="anchname1">萬荃</div>
+
+    <button class="anchbotton" onclick="deanch()" >
+        <img src="microphone.png" alt="Trulli" >
+        <img src="squares.png" alt="Trulli" >
+        <img src="shrink.png" alt="Trulli" >
+    </button>
+    
+    <div class="mic">
+        <img src="microphone.png" alt="anchored name" >
+    </div>
+    <div class="corner">
+        <div class="pin">
+            <img src="office-push-pin.png" alt="pin" >
+        </div>
+        <p>你</p>
+    </div>  
+</section>
+
+<aside id="aside1">
+    <div class="block" id="block1">
+        <div class="name" id="aside_name1">1%</div>
+
+        <div class="mic">
+            <img src="microphone.png" alt="Trulli" >
+        </div>
+
+        <div class="pic">
+            <img src="./IMG_0758.jpg" id="aside_pic1" class="aside_pic">
+        </div>
+
+        <div class="cross" onclick="crossed('block1')">
+            <img src="./remove.png">
+        </div>
+
+        <div class="anchbotton" onclick="to_anch('aside_name1', 'anchname1', 'aside_pic1', 'anchpic1')">
+            <img src="microphone.png" alt="Trulli">
+            <img src="squares.png" alt="Trulli" >
+            <img src="shrink.png" alt="Trulli" >
+        </div>
+    </div>
+
+    <div class="block" id="block2">
+        <div class="name" id="aside_name2">趴呢</div>
+        <div class="mic">
+            <img src="microphone.png" alt="Trulli" >
+        </div>
+        <div class="pic">
+            <img src="./IMG_0957.jpg" id="aside_pic2" class="aside_pic">
+        </div>
+        <div class="cross" onclick="crossed('block2')">
+            <img src="./remove.png">
+        </div>
+
+        <div class="anchbotton" onclick="to_anch('aside_name2', 'anchname1', 'aside_pic2', 'anchpic1')">
+            <img src="microphone.png" alt="Trulli" >
+            <img src="squares.png" alt="Trulli" >
+            <img src="shrink.png" alt="Trulli" >
+        </div>
+    </div>
+
+    <div class="block" id="block3">
+        <div class="name" id="aside_name3">我沒了</div>
+        <div class="mic">
+            <img src="microphone.png" alt="Trulli" >
+        </div>
+        <div class="pic" >
+            <img src="./IMG_2947.JPG" id="aside_pic3" class="aside_pic">
+        </div>
+        <div class="cross" onclick="crossed('block3')">
+            <img src="./remove.png">
+        </div>
+
+        <div class="anchbotton" onclick="to_anch('aside_name3', 'anchname1', 'aside_pic3', 'anchpic1')">
+            <img src="microphone.png" alt="Trulli" >
+            <img src="squares.png" alt="Trulli" >
+            <img src="shrink.png" alt="Trulli" >
+        </div>
+    </div>
+
+    <div class="block" id="block4">
+        <div class="name" id="aside_name4">Purple勻</div>
+        <div class="mic">
+            <img src="microphone.png" alt="Trulli" >
+        </div>
+        <div class="pic">
+            <img src="./IMG_7296.JPG" id="aside_pic4" class="aside_pic">
+        </div>
+        <div class="cross" onclick="crossed('block4')">
+            <img src="./remove.png">
+        </div>
+
+        <div class="anchbotton" onclick="to_anch('aside_name4', 'anchname1', 'aside_pic4', 'anchpic1')">
+            <img src="microphone.png" alt="Trulli" >
+            <img src="squares.png" alt="Trulli" >
+            <img src="shrink.png" alt="Trulli" >
+        </div>
+    </div>
+    <div class="block" id="block5">
+        <div class="name" id="aside_name5">Drunk boy</div>
+        <div class="mic">
+            <img src="microphone.png" alt="Trulli" >
+        </div>
+        <div class="pic">
+            <img src="./IMG_7554.JPG" id="aside_pic5" class="aside_pic">
+        </div>
+        <div class="cross" onclick="crossed('block5')">
+            <img src="./remove.png">
+        </div>
+
+        <div class="anchbotton" onclick="to_anch('aside_name5', 'anchname1', 'aside_pic5', 'anchpic1')">
+            <img src="microphone.png" alt="Trulli" >
+            <img src="squares.png" alt="Trulli" >
+            <img src="shrink.png" alt="Trulli" >
+        </div>
+    </div> 
+    <!--room for anchor candidate-->
+    <div class="block" id="block6">
+        <div class="name" id="aside_name6"></div>
+
+        <div class="mic">
+            <img src="microphone.png" alt="Trulli" >
+        </div>
+
+        <div class="pic">
+            <img src="./hand.png" id="aside_pic6" alt="Trulli" class="aside_pic">
+        </div>
+
+        <div class="cross" onclick="crossed('block6')">
+            <img src="./remove.png">
+        </div>
+
+        <div class="anchbotton" onclick="to_anch('aside_name6', 'anchname1', 'aside_pic6', 'anchpic1')">
+            <img src="microphone.png" alt="Trulli">
+            <img src="squares.png" alt="Trulli" >
+            <img src="shrink.png" alt="Trulli" >
+        </div>
+    </div>
+    
+    
+    </div>
+</aside>
+
+<footer>
+    <div class="leftp">
+        <p id="time" onload="showTime()"></p><p>| lis-ee</p>
+    </div>
+
+    <div class="middlep">
+        <botton class="botton" onclick="mute()">
+            
+            <img src="microphone.png" alt="Trulli" id='myDIV'>
+            <img src="mute.png" alt="Trulli" id='myDIV2'>
+
+            <div class="tooltip">
+                <span class="tooltiptext" id="mutetext">mic on/off</span>
+            </div>
+        </botton>
+
+
+
+        <div class="botton">
+            <img src="video-camera.png" alt="Trulli" >
+            <div class="tooltip">
+                <span class="tooltiptext">camera on/off</span>
+            </div>
+        </div>
+
+        <div class="botton">
+            <img src="hand.png" alt="Trulli" >
+            <div class="tooltip">
+                <span class="tooltiptext">raise your hand</span>
+            </div>
+        </div>
+
+        <div class="botton">
+            <img src="share.png" alt="Trulli" >
+            <div class="tooltip">
+                <span class="tooltiptext">share screen</span>
+            </div>
+        </div>
+
+        <div class="botton">
+            <img src="more-information.png" alt="Trulli" >
+            <div class="tooltip">
+                <span class="tooltiptext">more setting</span>
+            </div>
+        </div>
+
+        <div class="botton">
+            <img src="phone-call.png" alt="Trulli" >
+            <div class="tooltip">
+                <span class="tooltiptext">leave meeting</span>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <div class="rightp">
+        <div class="botton">
+            <img src="padlock.png" alt="Trulli" >
+            <div class="tooltip">
+                <span class="tooltiptext">host control</span>
+            </div>
+        </div>
+
+        <div class="botton">
+            <img src="geometry.png" alt="Trulli" >
+            <div class="tooltip">
+                <div class="tooltip">
+                    <span class="tooltiptext">other meeting features</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="botton">
+            <img src="comment.png" alt="Trulli" >
+            <div class="tooltip">
+                <span class="tooltiptext">messege</span>
+            </div>
+        </div>
+
+        <div class="botton">
+            <img src="people.png" alt="Trulli" >
+            <div class="tooltip">
+                <span class="tooltiptext">particioants</span>
+            </div>
+        </div>
+
+        <div class="botton">
+            <img src="info.png" alt="Trulli" >
+            <div class="tooltip">
+                <span class="tooltiptext">meeting detail</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    console.log(document.getElementsByTagName("section"))
+    console.log(document.getElementsByClassName("aside_pic"))
+</script>
+<script src="./main.js"></script>
+</body>
+</html>
